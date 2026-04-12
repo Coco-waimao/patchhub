@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChinaPatchFactory Blog | Custom Patches Tips, Design Ideas & Industry News</title>
+    <meta name="description" content="Discover expert tips on custom patch design, industry trends, and creative ideas. Learn about embroidered patches, backing options, and more from ChinaPatchFactory.">
+    <meta name="keywords" content="custom patches blog, patch design tips, embroidered patches guide, patch backing options, patch industry news">
+    <meta name="author" content="ChinaPatchFactory">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="ChinaPatchFactory Blog | Custom Patches Tips & Design Ideas">
+    <meta property="og:description" content="Discover expert tips on custom patch design, industry trends, and creative ideas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/patchhub/blog.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ChinaPatchFactory Blog | Custom Patches Tips & Design Ideas">
+    <meta name="twitter:description" content="Discover expert tips on custom patch design and industry trends.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/patchhub/blog.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yourusername.github.io/patchhub"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://yourusername.github.io/patchhub/blog.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-features">
+                    <span><i class="fas fa-clock"></i> 12H Free Proof</span>
+                    <span><i class="fas fa-shipping-fast"></i> On-Time Delivery</span>
+                    <span><i class="fas fa-headset"></i> 24/7 Customer Support</span>
+                    <span><i class="fas fa-check-circle"></i> No Minimum Qty</span>
+                </div>
+                <div class="top-contact">
+                    <a href="mailto:sales@chinapatchfactory.com"><i class="fas fa-envelope"></i> sales@chinapatchfactory.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏷️</span>
+                    <span class="logo-text">ChinaPatchFactory</span>
+                </a>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="index.html#why-us">Why Us</a></li>
+                        <li><a href="index.html#backing">Backing Options</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="index.html#quote" class="btn btn-primary">Get Free Quote</a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="separator"><i class="fas fa-chevron-right"></i></li>
+                    <li aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>ChinaPatchFactory Blog</h1>
+            <p>Expert tips, design inspiration, and industry insights for custom patches</p>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-tags">
+                <button class="category-tag active" data-filter="all">All</button>
+                <button class="category-tag" data-filter="design-tips">Design Tips</button>
+                <button class="category-tag" data-filter="industry-news">Industry News</button>
+                <button class="category-tag" data-filter="how-to">How-To Guides</button>
+                <button class="category-tag" data-filter="inspiration">Inspiration</button>
+                <button class="category-tag" data-filter="product-guide">Product Guides</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post" id="featuredPost" data-category="product-guide">
+        <div class="container">
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="imgs/blog/custom-embroidered-patches-colorful-thread-work-close-up-fef146e2.jpg" alt="Custom embroidered patches with colorful thread work" loading="lazy">
+                    <span class="featured-badge">Featured</span>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-category">Product Guide</span>
+                        <span class="post-date"><i class="far fa-calendar"></i> January 9, 2026</span>
+                        <span class="post-read"><i class="far fa-clock"></i> 10 min read</span>
+                    </div>
+                    <h2><a href="blog/custom-embroidered-patches-guide.html">Custom Embroidered Patches: The Complete Guide 2026</a></h2>
+                    <p>Discover everything you need to know about custom embroidered patches, from design fundamentals to production techniques. Learn why embroidered patches remain the top choice for businesses worldwide...</p>
+                    <a href="blog/custom-embroidered-patches-guide.html" class="btn btn-primary">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/3d-puff-embroidered-patches-dimensional-texture-69a06913.jpg" alt="3D puff embroidered patch showing dimensional foam backing" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/3d-puff-embroidered-patches.html">3D Puff Embroidered Patches: Adding Dimension to Your Designs</a></h3>
+                        <p>Discover how 3D puff embroidery creates stunning dimensional patches. Perfect for fashion brands and premium applications...</p>
+                        <a href="blog/3d-puff-embroidered-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/woven-patches-vs-embroidered-patches-comparison-0b822fc2.jpg" alt="Woven patch versus embroidered patch comparison" loading="lazy">
+                        <span class="blog-category">Comparison</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <h3><a href="blog/woven-patches-vs-embroidered.html">Woven Patches vs Embroidered: Which is Right for Your Project?</a></h3>
+                        <p>Compare woven vs embroidered patches: detail capability, durability, cost & best uses. Make the right choice...</p>
+                        <a href="blog/woven-patches-vs-embroidered.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/pvc-patches-on-outdoor-gear-backpack-showing-practical-appli-de3d308e.jpg" alt="Durable PVC patches for outdoor gear" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/pvc-patches-durability-guide.html">PVC Patches: The Ultimate Durability Guide</a></h3>
+                        <p>Learn why PVC patches are the top choice for outdoor gear, tactical equipment, and harsh environments...</p>
+                        <a href="blog/pvc-patches-durability-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="fashion-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/premium-leather-patches-on-denim-jacket-fashion-photography-42992bf8.jpg" alt="Premium leather patch on denim jacket" loading="lazy">
+                        <span class="blog-category">Fashion</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/leather-patches-for-fashion.html">Leather Patches: Elevating Fashion Brand Identity</a></h3>
+                        <p>Discover how leather patches add premium appeal to fashion brands. Genuine vs faux leather options...</p>
+                        <a href="blog/leather-patches-for-fashion.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/blog-featured.jpg" alt="Custom patches guide" loading="lazy">
+                        <span class="blog-category">Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <h3><a href="blog/blog-1.html">The Complete Guide to Custom Patches</a></h3>
+                        <p>Everything you need to know about choosing the right patch type for your project...</p>
+                        <a href="blog/blog-1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/close-up-chenille-patch-texture-fuzzy-yarn-stitched-details--ea1a0846.jpg" alt="Chenille patch varsity style" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/chenille-patches-varsity-style.html">Chenille Patches: The Classic Varsity Look</a></h3>
+                        <p>Discover everything about chenille patches: varsity letter history, manufacturing process, and design tips...</p>
+                        <a href="blog/chenille-patches-varsity-style.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 7 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/luxury-metal-patches-premium-branding-embossed-logo-craftsma-ecd02206.jpg" alt="Metal patches luxury branding" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/metal-patches-luxury-branding.html">Metal Patches: Premium Branding Solutions</a></h3>
+                        <p>Discover everything about metal patches: materials, manufacturing processes, and design tips for luxury branding...</p>
+                        <a href="blog/metal-patches-luxury-branding.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 8 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/sparkling-sequin-patches-on-dance-costume-stage-performance-d973324f.jpg" alt="Sequin patches for entertainment" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> January 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h3><a href="blog/sequin-patches-for-entertainment.html">Sequin Patches: Sparkle for Entertainment Industry</a></h3>
+                        <p>Discover everything about sequin patches: manufacturing process, design tips, and entertainment industry applications...</p>
+                        <a href="blog/sequin-patches-for-entertainment.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <span class="page-info">Showing 1-9 of 9 articles</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest patch design tips, industry news, and exclusive offers delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🏷️</span>
+                        <span class="logo-text">ChinaPatchFactory</span>
+                    </a>
+                    <p>Premium custom patches manufacturer from China. Factory direct prices with no minimum order.</p>
+                    <div class="footer-certificates">
+                        <span><i class="fas fa-shield-alt"></i> ISO 9001 Certified</span>
+                        <span><i class="fas fa-leaf"></i> Eco-Friendly</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="product/Embroidered-Patches/index.html">Embroidered Patches</a></li>
+                        <li><a href="product/Woven-Patches/index.html">Woven Patches</a></li>
+                        <li><a href="product/PVC-Silicone-Patches/index.html">PVC Patches</a></li>
+                        <li><a href="product/Leather-Patches/index.html">Leather Patches</a></li>
+                        <li><a href="product/Printed-Patches/index.html">Printed Patches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="index.html#size-guide">Size Guide</a></li>
+                        <li><a href="index.html#backing">Backing Options</a></li>
+                        <li><a href="index.html">Shipping Info</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChinaPatchFactory. All rights reserved.</p>
+                <p>Custom Patches Manufacturer | Made with ❤️ in China</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Blog Category Filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryTags = document.querySelectorAll('.category-tag');
+            const blogCards = document.querySelectorAll('.blog-card');
+            const featuredPost = document.getElementById('featuredPost');
+
+            categoryTags.forEach(tag => {
+                tag.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const filter = this.getAttribute('data-filter');
+
+                    // Update active state
+                    categoryTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Filter featured post
+                    if (featuredPost) {
+                        if (filter === 'all' || featuredPost.getAttribute('data-category') === filter) {
+                            featuredPost.style.display = 'block';
+                            setTimeout(() => {
+                                featuredPost.style.opacity = '1';
+                                featuredPost.style.transform = 'translateY(0)';
+                            }, 10);
+                        } else {
+                            featuredPost.style.opacity = '0';
+                            featuredPost.style.transform = 'translateY(-20px)';
+                            setTimeout(() => {
+                                featuredPost.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+
+                    // Filter blog cards
+                    blogCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+
+                        if (filter === 'all' || cardCategory === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.9)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+
+                    // Update pagination visibility
+                    const pagination = document.querySelector('.pagination');
+                    if (pagination) {
+                        pagination.style.display = filter === 'all' ? 'flex' : 'none';
+                    }
+                });
+            });
+        });
+
+        // Newsletter Form
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showNotification('Thank you for subscribing!', 'success');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
