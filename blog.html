@@ -297,11 +297,28 @@
                         <a href="blog/sequin-patches-for-entertainment.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 9 -->
+                <article class="blog-card" data-category="how-to design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/how-to-design-custom-patches-1.jpg" alt="How to design custom patches: sketch and color palette" loading="lazy">
+                        <span class="blog-category">How-To Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 9, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <h3><a href="blog/how-to-design-custom-patches.html">How to Design Custom Patches: The Complete Beginner's Guide</a></h3>
+                        <p>Learn how to design custom patches step by step: choose the right patch type, size, colors, and artwork format, then get a free digital proof...</p>
+                        <a href="blog/how-to-design-custom-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-9 of 9 articles</span>
+                <span class="page-info">Showing 1-10 of 10 articles</span>
             </div>
         </div>
     </section>
@@ -415,9 +432,9 @@
 
                     // Filter blog cards
                     blogCards.forEach(card => {
-                        const cardCategory = card.getAttribute('data-category');
+                        const cardCategories = card.getAttribute('data-category').split(' ');
 
-                        if (filter === 'all' || cardCategory === filter) {
+                        if (filter === 'all' || cardCategories.includes(filter)) {
                             card.style.display = 'block';
                             setTimeout(() => {
                                 card.style.opacity = '1';
