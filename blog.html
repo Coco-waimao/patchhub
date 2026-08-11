@@ -352,23 +352,18 @@
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-11 of 11 articles</span>
+                <span class="page-info">Showing 1-12 of 12 articles</span>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Get the latest patch design tips, industry news, and exclusive offers delivered to your inbox.</p>
-                </div>
-                <form class="newsletter-form" id="newsletterForm">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
+            <div class="cta-content">
+                <h2>Ready to Work With Us?</h2>
+                <p>Join thousands of satisfied customers worldwide. Get your free quote today!</p>
+                <a href="index.html#quote" class="btn btn-primary btn-large">Get Free Quote <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -557,7 +552,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-11 of 11 articles`;
+                            pageInfo.textContent = `Showing 1-12 of 12 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
@@ -567,13 +562,6 @@
                     }
                 });
             });
-        });
-
-        // Newsletter Form
-        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            showNotification('Thank you for subscribing!', 'success');
-            this.reset();
         });
     </script>
 </body>
