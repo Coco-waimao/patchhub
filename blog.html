@@ -119,7 +119,6 @@
         <div class="container">
             <h1>ChinaPatchFactory Blog</h1>
         </div>
-        <p>Expert tips, design inspiration, and industry insights for custom patches</p>
     </section>
 
     <!-- Blog Categories -->
@@ -348,11 +347,28 @@
                         <a href="blog/velcro-patches-tactical-uses.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 12 -->
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/patch-design-color-guide-thread-spools.jpg" alt="Vibrant embroidery thread spools alongside custom patches and color charts" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 12, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/color-guide-patch-design.html">Color Guide for Patch Design: Thread &amp; Material Selection</a></h3>
+                        <p>Master color matching for custom patches: Pantone thread matching, color contrast rules, fabric pairings, and color limits...</p>
+                        <a href="blog/color-guide-patch-design.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-12 of 12 articles</span>
+                <span class="page-info">Showing 1-13 of 13 articles</span>
             </div>
         </div>
     </section>
@@ -552,7 +568,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-12 of 12 articles`;
+                            pageInfo.textContent = `Showing 1-13 of 13 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
