@@ -364,11 +364,28 @@
                         <a href="blog/color-guide-patch-design.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 13 -->
+                <article class="blog-card" data-category="how-to">
+                    <div class="blog-image">
+                        <img src="imgs/blog/sew-on-patches-stitching-process.jpg" alt="Sew-on patch being hand-stitched onto a denim jacket" loading="lazy">
+                        <span class="blog-category">How-To Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 13, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/sew-on-patches-traditional-method.html">Sew-On Patches: The Traditional Permanent Solution</a></h3>
+                        <p>Learn why sew-on patches remain the most durable attachment method, with a step-by-step sewing guide...</p>
+                        <a href="blog/sew-on-patches-traditional-method.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-13 of 13 articles</span>
+                <span class="page-info">Showing 1-14 of 14 articles</span>
             </div>
         </div>
     </section>
@@ -568,7 +585,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-13 of 13 articles`;
+                            pageInfo.textContent = `Showing 1-14 of 14 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
