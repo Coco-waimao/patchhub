@@ -381,11 +381,28 @@
                         <a href="blog/sew-on-patches-traditional-method.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 14 -->
+                <article class="blog-card" data-category="how-to">
+                    <div class="blog-image">
+                        <img src="imgs/blog/adhesive-patches-applying-tote-bag.jpg" alt="Adhesive patch being pressed onto a canvas tote bag" loading="lazy">
+                        <span class="blog-category">How-To Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 14, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h3><a href="blog/adhesive-patches-temporary-option.html">Adhesive Patches: The Peel-and-Stick Solution for Temporary Branding</a></h3>
+                        <p>Learn how peel-and-stick adhesive patches work, plus where temporary stick-on branding shines...</p>
+                        <a href="blog/adhesive-patches-temporary-option.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-14 of 14 articles</span>
+                <span class="page-info">Showing 1-15 of 15 articles</span>
             </div>
         </div>
     </section>
@@ -585,7 +602,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-14 of 14 articles`;
+                            pageInfo.textContent = `Showing 1-15 of 15 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
