@@ -398,11 +398,28 @@
                         <a href="blog/adhesive-patches-temporary-option.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 15 -->
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/converting-logos-to-patches-1.jpg" alt="Converting logos to patches: vector artwork and finished embroidered patches" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 15, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/converting-logos-to-patches.html">Converting Logos to Patches: The Complete Vector Artwork Guide</a></h3>
+                        <p>Turn your logo into a custom patch the right way: vector vs raster files, the 5-point logo check, and digitizing for embroidery...</p>
+                        <a href="blog/converting-logos-to-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-15 of 15 articles</span>
+                <span class="page-info">Showing 1-16 of 16 articles</span>
             </div>
         </div>
     </section>
@@ -602,7 +619,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-15 of 15 articles`;
+                            pageInfo.textContent = `Showing 1-16 of 16 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
