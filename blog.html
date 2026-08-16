@@ -415,11 +415,28 @@
                         <a href="blog/converting-logos-to-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 16 -->
+                <article class="blog-card" data-category="inspiration">
+                    <div class="blog-image">
+                        <img src="imgs/blog/vintage-retro-patches-collection.jpg" alt="Collection of vintage and retro embroidered patches with faded colors" loading="lazy">
+                        <span class="blog-category">Inspiration</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 16, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/vintage-retro-patch-styles.html">Vintage &amp; Retro Patch Styles: Nostalgic Appeal</a></h3>
+                        <p>Explore vintage and retro patch styles that never go out of fashion — faded colors, old-school type, and the aged look...</p>
+                        <a href="blog/vintage-retro-patch-styles.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-16 of 16 articles</span>
+                <span class="page-info">Showing 1-17 of 17 articles</span>
             </div>
         </div>
     </section>
@@ -619,7 +636,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-16 of 16 articles`;
+                            pageInfo.textContent = `Showing 1-17 of 17 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
