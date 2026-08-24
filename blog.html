@@ -432,11 +432,28 @@
                         <a href="blog/vintage-retro-patch-styles.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 17 -->
+                <article class="blog-card" data-category="industry-news">
+                    <div class="blog-image">
+                        <img src="imgs/blog/motorcycle-club-patches-vest.jpg" alt="Leather motorcycle vest with custom embroidered club back patch" loading="lazy">
+                        <span class="blog-category">Industry News</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 24, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/custom-patches-for-motorcycle-clubs.html">Custom Patches for Motorcycle Clubs: Building Brotherhood</a></h3>
+                        <p>Discover why patches are the soul of club identity — anatomy, design rules, materials, and the right backing for vests...</p>
+                        <a href="blog/custom-patches-for-motorcycle-clubs.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-17 of 17 articles</span>
+                <span class="page-info">Showing 1-18 of 18 articles</span>
             </div>
         </div>
     </section>
@@ -636,7 +653,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-17 of 17 articles`;
+                            pageInfo.textContent = `Showing 1-18 of 18 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
