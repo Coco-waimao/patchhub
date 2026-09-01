@@ -145,7 +145,7 @@ Then visit `http://localhost:8000`
 ### Update Contact Information
 
 Edit these sections in all HTML files:
-- Email: `cocohan520@gmail.com`
+- Email: `sales@chinapatchfactory.com`
 - Phone: `+86 138-XXXX-XXXX`
 - Address: `KunShan, China`
 - Social media links
@@ -212,7 +212,7 @@ MIT License - feel free to use for your business!
 
 ## Support
 
-Need help customizing? Contact us at cocohan520@gmail.com
+Need help customizing? Contact us at sales@chinapatchfactory.com
 
 ---
 
