@@ -2003,10 +2003,35 @@ button {
     background-color: white;
 }
 
+/* Shared blog-card grid base (used by listing page and article "More Articles") */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+}
+
+/* Listing page (blog.html) only: 4 cards per row on desktop.
+   Scoped via .blog-grid-section so article pages keep their own grid. */
+.blog-grid-section .blog-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+    .blog-grid-section .blog-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-grid-section .blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-grid-section .blog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .blog-card {
