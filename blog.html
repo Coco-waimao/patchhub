@@ -551,11 +551,28 @@
                         <a href="blog/patch-placement-guide-positioning.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 24 -->
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/thread-types-embroidered-patches-hero.jpg" alt="Embroidered patch thread types: rayon, polyester, and metallic thread spools in multiple colors beside custom patches" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> September 18, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <h3><a href="blog/thread-types-embroidered-patches.html">Embroidered Patch Thread Types: Quality Guide</a></h3>
+                        <p>Compare embroidered patch thread types: rayon, polyester, metallic, and glow — sheen, durability, and color fastness for your custom patch...</p>
+                        <a href="blog/thread-types-embroidered-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-24 of 24 articles</span>
+                <span class="page-info">Showing 1-25 of 25 articles</span>
             </div>
         </div>
     </section>
@@ -755,7 +772,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-24 of 24 articles`;
+                            pageInfo.textContent = `Showing 1-25 of 25 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
