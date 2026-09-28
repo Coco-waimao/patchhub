@@ -568,11 +568,28 @@
                         <a href="blog/thread-types-embroidered-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <!-- Blog Post 25 -->
+                <article class="blog-card" data-category="how-to">
+                    <div class="blog-image">
+                        <img src="imgs/blog/denim-jacket-patches-styling-hero.jpg" alt="Denim jacket patches styling: vintage denim jacket covered with embroidered patches laid flat on a wooden table" loading="lazy">
+                        <span class="blog-category">How-To</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> September 27, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/denim-jacket-patches-styling.html">Denim Jacket Patches: Styling &amp; Placement Guide</a></h3>
+                        <p>Denim jacket patch styling and placement made simple: where patches go, sizing rules, attachment methods, and layout ideas...</p>
+                        <a href="blog/denim-jacket-patches-styling.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-25 of 25 articles</span>
+                <span class="page-info">Showing 1-26 of 26 articles</span>
             </div>
         </div>
     </section>
@@ -772,7 +789,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-25 of 25 articles`;
+                            pageInfo.textContent = `Showing 1-26 of 26 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
