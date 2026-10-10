@@ -585,11 +585,27 @@
                         <a href="blog/denim-jacket-patches-styling.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/hat-patches-cap-branding-hero.jpg" alt="Hat patches branding: three baseball caps with custom embroidered patches on the front panels" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 11, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/hat-patches-cap-branding.html">Hat Patches: The Ultimate Cap Branding Guide</a></h3>
+                        <p>Which patch types survive a curved crown, where they go on caps and beanies, sizing rules by position, and the attachment method that actually lasts...</p>
+                        <a href="blog/hat-patches-cap-branding.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-26 of 26 articles</span>
+                <span class="page-info">Showing 1-27 of 27 articles</span>
             </div>
         </div>
     </section>
@@ -789,7 +805,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-26 of 26 articles`;
+                            pageInfo.textContent = `Showing 1-27 of 27 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }

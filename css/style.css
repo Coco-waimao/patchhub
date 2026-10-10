@@ -3526,3 +3526,85 @@ button {
         page-break-inside: avoid;
     }
 }
+
+/* ============================================================
+   Article body bare tables (tables without a class attribute)
+   Scoped with :not([class]) so classed tables like
+   .comparison-table / .patch-type-table keep their own styles.
+   ============================================================ */
+.article-body table:not([class]) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 26px 0;
+    font-size: 0.95rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+
+.article-body table:not([class]) thead {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.article-body table:not([class]) th {
+    color: #ffffff;
+    padding: 13px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    line-height: 1.45;
+}
+
+.article-body table:not([class]) td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eef2f7;
+    color: #334155;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.article-body table:not([class]) tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.article-body table:not([class]) tbody tr:hover {
+    background: #eff6ff;
+}
+
+.article-body table:not([class]) tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Bold lead-in cells (first column) for scannability */
+.article-body table:not([class]) td:first-child {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Links inside bare tables */
+.article-body table:not([class]) td a {
+    color: #2563eb;
+    text-decoration: none;
+    border-bottom: 1px dashed #93c5fd;
+}
+
+.article-body table:not([class]) td a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
+}
+
+/* Narrow screens: allow horizontal scroll without breaking layout */
+@media (max-width: 768px) {
+    .article-body table:not([class]) {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.88rem;
+    }
+    .article-body table:not([class]) th,
+    .article-body table:not([class]) td {
+        padding: 10px 12px;
+        white-space: nowrap;
+    }
+}
