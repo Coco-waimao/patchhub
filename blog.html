@@ -601,11 +601,27 @@
                         <a href="blog/hat-patches-cap-branding.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/patch-text-legibility-guide-hero.jpg" alt="Patch text legibility: embroidered patches showing lettering at different sizes from crisp to filled-in" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 13, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h3><a href="blog/patch-text-legibility-guide.html">Patch Text Legibility: Font Size &amp; Style Guide</a></h3>
+                        <p>Minimum letter heights by stitch type, fonts that survive embroidery, spacing rules digitizers wish designers knew, and when to switch to woven or printed...</p>
+                        <a href="blog/patch-text-legibility-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-27 of 27 articles</span>
+                <span class="page-info">Showing 1-28 of 28 articles</span>
             </div>
         </div>
     </section>
@@ -805,7 +821,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-27 of 27 articles`;
+                            pageInfo.textContent = `Showing 1-28 of 28 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
