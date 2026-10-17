@@ -617,11 +617,27 @@
                         <a href="blog/patch-text-legibility-guide.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/custom-shapes-die-cut-patches-hero.jpg" alt="Custom shape die-cut patches in mountain, lightning bolt, wolf and state outline silhouettes" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 17, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/custom-shapes-die-cut-patches.html">Custom Shapes &amp; Die-Cut Patches: The Complete Guide</a></h3>
+                        <p>Merrowed vs laser-cut vs die-cut edges, geometry rules for corners and cutouts, how shape quietly moves cost, and silhouettes that do the talking...</p>
+                        <a href="blog/custom-shapes-die-cut-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-28 of 28 articles</span>
+                <span class="page-info">Showing 1-29 of 29 articles</span>
             </div>
         </div>
     </section>
@@ -821,7 +837,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-28 of 28 articles`;
+                            pageInfo.textContent = `Showing 1-29 of 29 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }

@@ -263,4 +263,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://www.chinapatchfactory.com/blog/custom-shapes-die-cut-patches.html</loc>
+        <lastmod>2026-10-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
