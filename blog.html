@@ -633,11 +633,27 @@
                         <a href="blog/custom-shapes-die-cut-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/metallic-thread-patches-shine-hero.jpg" alt="Metallic thread patches with gold and silver embroidered crown, star and wing emblems on dark velvet" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/metallic-thread-patches-shine.html">Metallic Thread Patches: Adding Shine Without the Headaches</a></h3>
+                        <p>How foil-core thread works, why it breaks, the machine settings that prevent it, the 8mm text floor, real cost math, and when polyester shines instead...</p>
+                        <a href="blog/metallic-thread-patches-shine.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-29 of 29 articles</span>
+                <span class="page-info">Showing 1-30 of 30 articles</span>
             </div>
         </div>
     </section>
@@ -837,7 +853,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-29 of 29 articles`;
+                            pageInfo.textContent = `Showing 1-30 of 30 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
