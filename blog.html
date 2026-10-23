@@ -649,11 +649,27 @@
                         <a href="blog/metallic-thread-patches-shine.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/magnetic-patches-specialty-applications-hero.jpg" alt="Magnetic patch attachment guide: embroidered patch held on uniform chest by hidden magnetic backing" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 23, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h3><a href="blog/magnetic-patches-specialty-applications.html">Magnetic Patches: Innovative Attachment Solutions</a></h3>
+                        <p>How magnetic closures work, holding power by patch size, uniform quick-swap uses, safety limits, and when magnets lose to sew-on...</p>
+                        <a href="blog/magnetic-patches-specialty-applications.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-30 of 30 articles</span>
+                <span class="page-info">Showing 1-31 of 31 articles</span>
             </div>
         </div>
     </section>
@@ -853,7 +869,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-30 of 30 articles`;
+                            pageInfo.textContent = `Showing 1-31 of 31 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
