@@ -665,11 +665,27 @@
                         <a href="blog/magnetic-patches-specialty-applications.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/corporate-logo-patches-branding-hero.jpg" alt="Corporate logo patches: staff uniforms with matching embroidered company logo patches on chest" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 27, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h3><a href="blog/corporate-logo-patches-branding.html">Corporate Logo Patches: Professional Branding</a></h3>
+                        <p>Embroidered vs woven vs PVC for brand marks, Pantone color matching, placement standards, attachment strategy, and reorders that match...</p>
+                        <a href="blog/corporate-logo-patches-branding.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-31 of 31 articles</span>
+                <span class="page-info">Showing 1-32 of 32 articles</span>
             </div>
         </div>
     </section>
@@ -869,7 +885,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-31 of 31 articles`;
+                            pageInfo.textContent = `Showing 1-32 of 32 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
