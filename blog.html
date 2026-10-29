@@ -681,11 +681,27 @@
                         <a href="blog/corporate-logo-patches-branding.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="design-tips">
+                    <div class="blog-image">
+                        <img src="imgs/blog/patch-design-software-comparison-hero.jpg" alt="Patch design software comparison: vector design app with sketches and thread spools for custom patch artwork" loading="lazy">
+                        <span class="blog-category">Design Tips</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> October 29, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h3><a href="blog/patch-design-software-comparison.html">Patch Design Software: Free &amp; Paid Options Compared</a></h3>
+                        <p>Vector editors vs embroidery digitizing suites, honest prices, the auto-digitizing trap, and when to skip the software and outsource...</p>
+                        <a href="blog/patch-design-software-comparison.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-32 of 32 articles</span>
+                <span class="page-info">Showing 1-33 of 33 articles</span>
             </div>
         </div>
     </section>
@@ -885,7 +901,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-32 of 32 articles`;
+                            pageInfo.textContent = `Showing 1-33 of 33 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
