@@ -697,11 +697,27 @@
                         <a href="blog/patch-design-software-comparison.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/sports-team-patches-design-hero.jpg" alt="Embroidered sports team crest patch on a soccer jersey chest with youth team on the field behind" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 1, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/sports-team-patches-design.html">Sports Team Patches: Building Team Spirit</a></h3>
+                        <p>Crest design rules that read at twenty yards, jersey sizes and placement, backings that survive weekly washing, and roster ordering tips...</p>
+                        <a href="blog/sports-team-patches-design.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-33 of 33 articles</span>
+                <span class="page-info">Showing 1-34 of 34 articles</span>
             </div>
         </div>
     </section>
@@ -901,7 +917,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-33 of 33 articles`;
+                            pageInfo.textContent = `Showing 1-34 of 34 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
