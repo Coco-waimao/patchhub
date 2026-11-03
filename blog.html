@@ -713,11 +713,27 @@
                         <a href="blog/sports-team-patches-design.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="inspiration">
+                    <div class="blog-image">
+                        <img src="imgs/blog/event-patches-commemorative-hero.jpg" alt="Festival goer wearing a denim vest covered in colorful embroidered event patches at dusk" loading="lazy">
+                        <span class="blog-category">Inspiration</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 3, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h3><a href="blog/event-patches-commemorative.html">Event Patches: Commemorative Designs</a></h3>
+                        <p>Festival, race and conference badge ideas: designs people keep, collectible effects, backing choices and ordering timelines...</p>
+                        <a href="blog/event-patches-commemorative.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-34 of 34 articles</span>
+                <span class="page-info">Showing 1-35 of 35 articles</span>
             </div>
         </div>
     </section>
@@ -917,7 +933,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-34 of 34 articles`;
+                            pageInfo.textContent = `Showing 1-35 of 35 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
