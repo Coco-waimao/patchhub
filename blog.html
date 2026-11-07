@@ -745,11 +745,27 @@
                         <a href="blog/gaming-patches-esports.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/uniform-patches-professional-hero.jpg" alt="Hotel front desk employee in navy uniform with embroidered company logo patch on the chest" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 7, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/uniform-patches-professional.html">Uniform Patches: Professional Identity</a></h3>
+                        <p>Hotel, airline and workwear uniform patches: design standards, placement rules, laundry-proof backings and staff ordering...</p>
+                        <a href="blog/uniform-patches-professional.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-36 of 36 articles</span>
+                <span class="page-info">Showing 1-37 of 37 articles</span>
             </div>
         </div>
     </section>
@@ -949,7 +965,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-36 of 36 articles`;
+                            pageInfo.textContent = `Showing 1-37 of 37 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
