@@ -777,11 +777,27 @@
                         <a href="blog/backpack-patches-personalization.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/military-patches-history-hero.jpg" alt="Military Patches: History and Meaning" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 16, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/military-patches-history.html">Military Patches: History and Meaning</a></h3>
+                        <p>A century of shoulder insignia history, subdued color doctrine, patch types and modern civilian uses...</p>
+                        <a href="blog/military-patches-history.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-38 of 38 articles</span>
+                <span class="page-info">Showing 1-39 of 39 articles</span>
             </div>
         </div>
     </section>
@@ -981,7 +997,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-38 of 38 articles`;
+                            pageInfo.textContent = `Showing 1-39 of 39 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
