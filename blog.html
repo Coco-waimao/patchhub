@@ -793,11 +793,27 @@
                         <a href="blog/military-patches-history.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="product-guide">
+                    <div class="blog-image">
+                        <img src="imgs/blog/police-fire-ems-patches-hero.jpg" alt="Police, Fire and EMS Patches: Public Service Identity" loading="lazy">
+                        <span class="blog-category">Product Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 18, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/police-fire-ems-patches.html">Police, Fire &amp; EMS Patches: Public Service Identity</a></h3>
+                        <p>Duty-proof design rules, service symbolism, placement standards and attachment for police, fire and EMS programs...</p>
+                        <a href="blog/police-fire-ems-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-39 of 39 articles</span>
+                <span class="page-info">Showing 1-40 of 40 articles</span>
             </div>
         </div>
     </section>
@@ -997,7 +1013,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-39 of 39 articles`;
+                            pageInfo.textContent = `Showing 1-40 of 40 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
