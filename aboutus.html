@@ -51,6 +51,96 @@
         ]
     }
     </script>
+
+    <!-- Organization & Team Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://www.chinapatchfactory.com/#organization",
+        "name": "ChinaPatchFactory",
+        "url": "https://www.chinapatchfactory.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.chinapatchfactory.com/imgs/logo.png"
+        },
+        "image": "https://www.chinapatchfactory.com/imgs/og-image.jpg",
+        "description": "ChinaPatchFactory is a custom patches manufacturer in China producing embroidered, woven, printed, PVC, leather and metal patches with no minimum order, free design and worldwide shipping.",
+        "foundingDate": "2011",
+        "email": "sales@chinapatchfactory.com",
+        "telephone": "+86-157-1104-7494",
+        "areaServed": "Worldwide",
+        "knowsAbout": [
+            "Custom patches",
+            "Embroidered patches",
+            "Woven patches",
+            "PVC patches",
+            "Leather patches",
+            "Metal patches",
+            "Patch design and digitizing"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/coco.han.39566",
+            "https://www.instagram.com/greentree09/"
+        ],
+        "employee": [
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#michael-chen",
+                "name": "Michael Chen",
+                "jobTitle": "Founder & CEO",
+                "description": "15+ years in the embroidery industry. Passionate about quality and customer satisfaction.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#michael-chen",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#sarah-liu",
+                "name": "Sarah Liu",
+                "jobTitle": "Head of Design",
+                "description": "Lead designer with expertise in creating stunning patch designs for global brands.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#sarah-liu",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#david-wang",
+                "name": "David Wang",
+                "jobTitle": "Production Manager",
+                "description": "Ensures every patch meets our high quality standards before shipping.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#david-wang",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#emily-zhang",
+                "name": "Emily Zhang",
+                "jobTitle": "Customer Service Lead",
+                "description": "Dedicated to providing exceptional support to our customers worldwide.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#emily-zhang",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#coco-han",
+                "name": "Coco Han",
+                "jobTitle": "Sales Manager",
+                "description": "Works with brands, clubs and event teams to plan orders, budgets and delivery schedules.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#coco-han",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            },
+            {
+                "@type": "Person",
+                "@id": "https://www.chinapatchfactory.com/aboutus.html#alex-huang",
+                "name": "Alex Huang",
+                "jobTitle": "Sales Manager",
+                "description": "Helps wholesale and corporate buyers with quantities, artwork preparation and shipping options.",
+                "url": "https://www.chinapatchfactory.com/aboutus.html#alex-huang",
+                "worksFor": { "@id": "https://www.chinapatchfactory.com/#organization" }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Top Bar -->
@@ -317,7 +407,7 @@
                 <p>The people behind ChinaPatchFactory's success</p>
             </div>
             <div class="team-grid">
-                <div class="team-member">
+                <div class="team-member" id="michael-chen">
                     <div class="member-avatar">
                         <i class="fas fa-user-circle"></i>
                     </div>
@@ -325,7 +415,7 @@
                     <span class="member-role">Founder & CEO</span>
                     <p>15+ years in the embroidery industry. Passionate about quality and customer satisfaction.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" id="sarah-liu">
                     <div class="member-avatar">
                         <i class="fas fa-user-circle"></i>
                     </div>
@@ -333,7 +423,7 @@
                     <span class="member-role">Head of Design</span>
                     <p>Lead designer with expertise in creating stunning patch designs for global brands.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" id="david-wang">
                     <div class="member-avatar">
                         <i class="fas fa-user-circle"></i>
                     </div>
@@ -341,13 +431,29 @@
                     <span class="member-role">Production Manager</span>
                     <p>Ensures every patch meets our high quality standards before shipping.</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member" id="emily-zhang">
                     <div class="member-avatar">
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <h3>Emily Zhang</h3>
                     <span class="member-role">Customer Service Lead</span>
                     <p>Dedicated to providing exceptional support to our customers worldwide.</p>
+                </div>
+                <div class="team-member" id="coco-han">
+                    <div class="member-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Coco Han</h3>
+                    <span class="member-role">Sales Manager</span>
+                    <p>Works with brands, clubs and event teams to plan orders, budgets and delivery schedules.</p>
+                </div>
+                <div class="team-member" id="alex-huang">
+                    <div class="member-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Alex Huang</h3>
+                    <span class="member-role">Sales Manager</span>
+                    <p>Helps wholesale and corporate buyers with quantities, artwork preparation and shipping options.</p>
                 </div>
             </div>
         </div>

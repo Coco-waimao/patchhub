@@ -134,6 +134,10 @@ function initFAQ() {
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         
+        // Static FAQ blocks render the question as a plain heading and have no
+        // toggle element, so there is nothing to attach the accordion to.
+        if (!question) return;
+        
         question.addEventListener('click', function() {
             // Close other items
             faqItems.forEach(otherItem => {
