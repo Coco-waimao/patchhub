@@ -203,7 +203,12 @@
         }
     </style>
 
-    <!-- Product Structured Data. No aggregateRating or price: neither has a verifiable on-page source. -->
+    <!-- Product Structured Data. This is a quote-based, made-to-order item with no fixed
+         price, no verifiable reviews and no published return/shipping policy. Google requires
+         offers.price > 0 for merchant listings, so the Offer is deliberately omitted rather
+         than filling a guessed, zero or "from" price (which would be a structured-data
+         violation). The Product entity still carries name, image, material, brand, maker
+         and technical specs; merchant-listing rich results are intentionally not claimed. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -225,14 +230,6 @@
             "name": "ChinaPatchFactory",
             "url": "https://www.chinapatchfactory.com",
             "areaServed": "Worldwide"
-        },
-        "offers": {
-            "@type": "Offer",
-            "url": "https://www.chinapatchfactory.com/index.html#quote",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "seller": { "@type": "Organization", "name": "ChinaPatchFactory" },
-            "description": "Quoted per order. Price depends on size, color count, backing and quantity. Free digital proof within 12 hours. No minimum order quantity."
         },
         "additionalProperty": [
             { "@type": "PropertyValue", "name": "Maximum colors", "value": "12 per design" },

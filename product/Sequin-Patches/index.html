@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Structured Data -->
+        <!-- Product Structured Data. Quote-based, made-to-order items: no fixed price,
+         no verifiable reviews and no published return/shipping policy. Google requires
+         offers.price > 0 for merchant listings, so the Offer and AggregateRating are
+         deliberately omitted rather than filling guessed values. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,16 +46,6 @@
         "brand": {
             "@type": "Brand",
             "name": "ChinaPatchFactory"
-        },
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.6",
-            "reviewCount": "1267"
         }
     }
     </script>
@@ -183,16 +177,6 @@
                 <div class="product-info-detail">
                     <div class="product-header">
                         <span class="product-category-tag">Specialty</span>
-                        <div class="product-rating-large">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="rating-text">4.6 (1,267 reviews)</span>
-                        </div>
                     </div>
                     
                     <h1>Sequin Patches</h1>
@@ -238,7 +222,7 @@
                 <div class="tab-nav">
                     <button class="tab-nav-btn active" data-tab="overview">Overview</button>
                     <button class="tab-nav-btn" data-tab="specifications">Specifications</button>
-                    <button class="tab-nav-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-nav-btn" data-tab="reviews">Reviews &amp; Samples</button>
                     <button class="tab-nav-btn" data-tab="faq">FAQ</button>
                 </div>
 
@@ -393,88 +377,12 @@
                         </div>
                     </div>
 
-                    <!-- Reviews Tab -->
+                    <!-- Reviews panel: no unverifiable ratings or testimonials are published. -->
                     <div class="tab-panel" id="reviews">
-                        <h2>Customer Reviews</h2>
-                        <div class="reviews-summary">
-                            <div class="rating-big">
-                                <span class="rating-number">4.6</span>
-                                <div class="stars-large">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="rating-count">Based on 1,267 reviews</span>
-                            </div>
-                            <div class="rating-breakdown">
-                                <div class="rating-bar">
-                                    <span>5 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 85%"></div></div>
-                                    <span>85%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>4 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 10%"></div></div>
-                                    <span>10%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>3 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 3%"></div></div>
-                                    <span>3%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>2 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 1.2%"></div></div>
-                                    <span>1.2%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>1 star</span>
-                                    <div class="bar"><div class="fill" style="width: 0.8%"></div></div>
-                                    <span>0.8%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reviews-list">
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">Choreographer Maria</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"These sequin patches are PERFECT for our dance recital costumes! They catch the stage lights beautifully and have held up through multiple rehearsals and shows."</p>
-                                <span class="review-date">March 21, 2026</span>
-                            </div>
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">Fashion Designer K.</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"The flip sequin patches have been a huge hit in our collection! Customers love the interactive element and the quality is excellent - sequins don't fall off."</p>
-                                <span class="review-date">March 15, 2026</span>
-                            </div>
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">Event Planner S.</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"Used sequin patches for our festival merchandise and they looked amazing! The holographic sequins really popped in photos. Just wish they were a bit more durable for heavy wear."</p>
-                                <span class="review-date">March 9, 2026</span>
-                            </div>
-                            
-                        </div>
+                        <h2>Reviews &amp; Samples</h2>
+                        <p style="margin-bottom:1rem;">We do not publish star ratings or customer testimonials until we have verifiable, consented feedback behind them. Instead of a number we cannot substantiate, here is what we can put in your hands before you commit: a free digital proof within 12 hours, a physical pre-production sample on request, and a written spec sheet for your exact size, colours and backing.</p>
+                        <p>Every patch is made to order against an approved proof, so the run you receive matches the sample you signed off. Ask for a sample or a reference job in your quote request.</p>
+                        <a href="../../index.html#quote" class="btn btn-primary">Request a Sample &amp; Quote</a>
                     </div>
 
                     <!-- FAQ Tab -->

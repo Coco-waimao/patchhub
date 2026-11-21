@@ -32,6 +32,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Structured Data -->
+        <!-- Product Structured Data. Quote-based, made-to-order items: no fixed price,
+         no verifiable reviews and no published return/shipping policy. Google requires
+         offers.price > 0 for merchant listings, so the Offer and AggregateRating are
+         deliberately omitted rather than filling guessed values. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,16 +46,6 @@
         "brand": {
             "@type": "Brand",
             "name": "ChinaPatchFactory"
-        },
-        "offers": {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "2847"
         }
     }
     </script>
@@ -183,16 +177,6 @@
                 <div class="product-info-detail">
                     <div class="product-header">
                         <span class="product-category-tag">Embroidered</span>
-                        <div class="product-rating-large">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.9 (2,847 reviews)</span>
-                        </div>
                     </div>
                     
                     <h1>Custom Embroidered Patches</h1>
@@ -238,7 +222,7 @@
                 <div class="tab-nav">
                     <button class="tab-nav-btn active" data-tab="overview">Overview</button>
                     <button class="tab-nav-btn" data-tab="specifications">Specifications</button>
-                    <button class="tab-nav-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-nav-btn" data-tab="reviews">Reviews &amp; Samples</button>
                     <button class="tab-nav-btn" data-tab="faq">FAQ</button>
                 </div>
 
@@ -384,105 +368,12 @@
                         </div>
                     </div>
 
-                    <!-- Reviews Tab -->
+                    <!-- Reviews panel: no unverifiable ratings or testimonials are published. -->
                     <div class="tab-panel" id="reviews">
-                        <h2>Customer Reviews</h2>
-                        <div class="reviews-summary">
-                            <div class="rating-big">
-                                <span class="rating-number">4.9</span>
-                                <div class="stars-large">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="rating-count">Based on 2,847 reviews</span>
-                            </div>
-                            <div class="rating-breakdown">
-                                <div class="rating-bar">
-                                    <span>5 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 92%"></div></div>
-                                    <span>92%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>4 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 6%"></div></div>
-                                    <span>6%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>3 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 1.5%"></div></div>
-                                    <span>1.5%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>2 stars</span>
-                                    <div class="bar"><div class="fill" style="width: 0.3%"></div></div>
-                                    <span>0.3%</span>
-                                </div>
-                                <div class="rating-bar">
-                                    <span>1 star</span>
-                                    <div class="bar"><div class="fill" style="width: 0.2%"></div></div>
-                                    <span>0.2%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="reviews-list">
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">Michael R.</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"Excellent quality embroidered patches! The colors are vibrant and the stitching is perfect. We ordered 500 pieces for our company uniforms and everyone loves them. Fast turnaround too - got our proof within 8 hours!"</p>
-                                <span class="review-date">March 5, 2026</span>
-                            </div>
-
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">Sarah K.</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"I've ordered from several patch companies before, but ChinaPatchFactory is by far the best. The quality is outstanding, prices are competitive, and their customer service is top-notch. Highly recommend!"</p>
-                                <span class="review-date">February 28, 2026</span>
-                            </div>
-
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <div class="reviewer-info">
-                                        <span class="reviewer-name">David L.</span>
-                                        <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified Purchase</span>
-                                    </div>
-                                    <div class="review-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <p class="review-text">"Ordered custom patches for our motorcycle club. The detail on these patches is incredible - even our complex logo came out perfectly. Great communication throughout the process."</p>
-                                <span class="review-date">February 20, 2026</span>
-                            </div>
-                        </div>
+                        <h2>Reviews &amp; Samples</h2>
+                        <p style="margin-bottom:1rem;">We do not publish star ratings or customer testimonials until we have verifiable, consented feedback behind them. Instead of a number we cannot substantiate, here is what we can put in your hands before you commit: a free digital proof within 12 hours, a physical pre-production sample on request, and a written spec sheet for your exact size, colours and backing.</p>
+                        <p>Every patch is made to order against an approved proof, so the run you receive matches the sample you signed off. Ask for a sample or a reference job in your quote request.</p>
+                        <a href="../../index.html#quote" class="btn btn-primary">Request a Sample &amp; Quote</a>
                     </div>
 
                     <!-- FAQ Tab -->
