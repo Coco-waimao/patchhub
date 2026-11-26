@@ -825,11 +825,27 @@
                         <a href="blog/school-university-patches.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </article>
+
+                <article class="blog-card" data-category="inspiration">
+                    <div class="blog-image">
+                        <img src="imgs/blog/automotive-patches-car-clubs-hero.jpg" alt="Automotive Patches: Car Club Culture" loading="lazy">
+                        <span class="blog-category">Inspiration</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> November 26, 2026</span>
+                            <span><i class="far fa-clock"></i> 11 min</span>
+                        </div>
+                        <h3><a href="blog/automotive-patches-car-clubs.html">Automotive Patches: Car Club Culture</a></h3>
+                        <p>Rocker sets, membership marks, materials that survive meets, placement conventions and chapter ordering...</p>
+                        <a href="blog/automotive-patches-car-clubs.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <span class="page-info">Showing 1-41 of 41 articles</span>
+                <span class="page-info">Showing 1-42 of 42 articles</span>
             </div>
         </div>
     </section>
@@ -1029,7 +1045,7 @@
                     if (pageInfo) {
                         const totalCount = matchingCards.length + (filter === 'all' || filter === 'product-guide' ? 1 : 0);
                         if (filter === 'all') {
-                            pageInfo.textContent = `Showing 1-41 of 41 articles`;
+                            pageInfo.textContent = `Showing 1-42 of 42 articles`;
                         } else {
                             pageInfo.textContent = `Showing ${totalCount} article${totalCount > 1 ? 's' : ''} for ${categoryLabel}`;
                         }
